@@ -14,11 +14,21 @@ const ContextStates = (props)=>{
 
     const drumKey = {heater1, heater2, heater3, heater4, heater5, heater6, heater7, heater8, heater9}
     
+    const music ={
+        Q: "Heater 1",
+        W: "Heater 2",
+        E: "Heater 3",
+        A: "Heater 4",
+        S: "Clap",
+        D: "Open HH",
+        Z: "Kick n' Hat",
+        X: "Kick",
+        C: "Closed HH"
+    }
     
-
     
     return(
-        <DrumContext.Provider value={{drumKey}}>
+        <DrumContext.Provider value={{drumKey, music}}>
             {props.children}
         </DrumContext.Provider>
     )
